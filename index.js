@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-const url = "https://api.imgflip.com/get_memes"
+const url = "http://localhost:3000/memes"
 
 fetch(url)
 .then(resp => resp.json())
-.then(data => renderMeme(data.data))
+.then(memes => renderMeme(memes))
 
 const main = document.getElementById('main')
 
@@ -13,7 +13,7 @@ const main = document.getElementById('main')
  function renderMeme(memeArray){
     memeArray.forEach(meme => {
        const image = document.createElement("img")
-       image.src = meme.url
+       image.src = meme.image
        main.append(image) 
     })
  }
