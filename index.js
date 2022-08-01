@@ -5,7 +5,7 @@ const url = "https://api.imgflip.com/get_memes"
 
 fetch(url)
 .then(resp => resp.json())
-.then(data => console.log(data.data))
+.then(data => renderMeme(data.data))
 
 const main = document.getElementById('main')
 
