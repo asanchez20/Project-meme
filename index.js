@@ -58,6 +58,8 @@ const main = document.getElementById('main')
     })
  }
 
+      
+=======
 function addComment(e){
    e.preventDefault()
    const newCommentItem = document.createElement('li')
