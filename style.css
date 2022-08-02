@@ -36,6 +36,7 @@ form{
 
       div.card{
             background-color: white;
+            display: inline-block;
             animation: myAnim 2s ease 0s 1 normal forwards;
 
             
@@ -71,10 +72,5 @@ form{
                 }
             }
 
-            div#main{
-                display: inline-block;
-                margin-left: 40%;
-                text-align: center;
-                
-            }
+          
     
