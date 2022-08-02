@@ -45,8 +45,16 @@ const main = document.getElementById('main')
        upvoteNum.textContent = meme.upVote
        downvoteBtn.textContent = "Downvote"
        downvoteNum.textContent = meme.downVote
-
-       //Button Event Listeners
+      
+       // Event Listeners
+       image.addEventListener("mouseover", () =>{
+        image.style.height = '340px'
+        image.style.width = 'auto'
+       })
+       image.addEventListener('mouseout',() =>{
+         image.style.height = '170px'
+         image.style.width = 'auto'
+       })
       upvoteBtn.addEventListener('click', () =>{
          upvoteNum.textContent = parseInt(upvoteNum.textContent) + 1
       })
