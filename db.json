@@ -2,35 +2,35 @@
     "memes": [
       {
         "id": 1,
-        "name": "Clean code",
+        "name": "Clean the Code",
         "image": "https://i.imgflip.com/5gy51n.jpg",
         "upVote": 0,
         "downVote": 0
       },
       {
         "id": 2,
-        "name": "Code Works",
+        "name": "Why Code?",
         "image": "https://www.digitaltechnologylabs.com/wp-content/uploads/2019/06/01-240x300.jpg",
         "upVote": 0,
         "downVote": 0
       },
       {
         "id": 3,
-        "name": "Sleep Code",
+        "name": "Wide Awake",
         "image": "https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Programmer-while-sleeping.jpg?x34900",
         "upVote": 0,
         "downVote": 0
       },
       {
         "id": 4,
-        "name": "Real Programmer",
+        "name": "I'm a Real Programmer",
         "image": "https://miro.medium.com/max/1400/0*r6iQzljiuJavVxRM",
         "upVote": 0,
         "downVote": 0
       },
       {
         "id": 5,
-        "name": "Actual Coding",
+        "name": "Coding Memes VS Actually Coding",
         "image": "https://assets-global.website-files.com/5f3c19f18169b62a0d0bf387/60d33bf3a2121cc74f72a286_0AEnnZYBAYzmSXzyGaopjvEGKKO1yFqf_zMXqFTAT6vUDfXVPRifI3J8oBjZUl51PnRQqf2tqpjiRt33IKgg4sTiJi2YShGTN5iNUIoYbNj2HXobiQg4-k7yBiNT54EKOGYyZOR2.png",
         "upVote": 0,
         "downVote": 0
@@ -58,14 +58,14 @@
       },
       {
         "id": 9,
-        "name": "Wizards",
+        "name": "So Embarrassing",
         "image": "https://i0.wp.com/tutorial.eyehunts.com/wp-content/uploads/2021/07/279880866_5034165176632320_3239061960610143547_n.jpg?resize=750%2C654&ssl=1",
         "upVote": 0,
         "downVote": 0
       },
       {
         "id": 10,
-        "name": "Programmer baby",
+        "name": "Programmer Baby",
         "image": "https://miro.medium.com/max/1400/0*MU2vnVDQMHG13pPw.png",
         "upVote": 0,
         "downVote": 0
