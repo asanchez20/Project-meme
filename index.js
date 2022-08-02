@@ -47,7 +47,9 @@ const main = document.getElementById('main')
        downvoteNum.textContent = meme.downVote
 
        //Button Event Listeners
-
+      upvoteBtn.addEventListener('click', () =>{
+         
+      })
        
 
        //Append to Dom
