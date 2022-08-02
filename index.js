@@ -29,7 +29,10 @@ const main = document.getElementById('main')
        formLabel.textContent = "Add a Comment:"
        const formInput = document.createElement('input')
        formInput.type = "text"
-       commentForm.append(formLabel, formInput)
+       const submitBtn = document.createElement('button')
+       submitBtn.label = "submit"
+       submitBtn.textContent = "Submit"
+       commentForm.append(formLabel, formInput, submitBtn)
        
       //Add Content
        memeHouse.className = "card"
@@ -39,6 +42,9 @@ const main = document.getElementById('main')
        upvoteNum.textContent = meme.upVote
        downvoteBtn.textContent = "Downvote"
        downvoteNum.textContent = meme.downVote
+
+       //Button Event Listeners
+
        
 
        //Append to Dom
