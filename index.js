@@ -49,11 +49,11 @@ const main = document.getElementById('main')
        // Event Listeners
        image.addEventListener("mouseover", () =>{
         image.style.height = '340px'
-        image.style.width = 'auto'
+        image.style.width = '540px'
        })
        image.addEventListener('mouseout',() =>{
          image.style.height = '170px'
-         image.style.width = 'auto'
+         image.style.width = '270px'
        })
       upvoteBtn.addEventListener('click', () =>{
          upvoteNum.textContent = parseInt(upvoteNum.textContent) + 1
