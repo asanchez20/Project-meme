@@ -26,11 +26,12 @@ form{
         /* text-align: center; */
         border: grey solid 1px;
         padding: 1rem;
-        /* width: 15rem;
-        height: 25rem; */
+         /* width: 15rem;
+        height: 25rem;  */
         display: block;
         margin: 1rem 2rem;
         box-shadow: 3px 4px #4bcce0;
+        
       }
 
       div.card{
@@ -71,9 +72,9 @@ form{
             }
 
             div#main{
-                display: inline-grid;
-                position: relative;
-                left: 600px;
-                top: 2px;
+                display: inline-block;
+                margin-left: 40%;
+                text-align: center;
+                
             }
     
