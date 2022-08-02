@@ -12,7 +12,7 @@ const main = document.getElementById('main')
  // render function
  function renderMeme(memeArray){
     memeArray.forEach(meme => {
-      //create meme parts
+      //Create Meme Parts
       const memeHouse = document.createElement('div')
       const memeName = document.createElement('h2')
        const image = document.createElement("img")
@@ -20,7 +20,18 @@ const main = document.getElementById('main')
        const upvoteNum = document.createElement("p")
        const downvoteBtn = document.createElement('button')
        const downvoteNum = document.createElement("p")
+       const commentList = document.createElement('ul')
 
+       //Comment Form
+       const commentForm = document.createElement("form")
+       const formLabel = document.createElement('label')
+       formLabel.for = "comment"
+       formLabel.textContent = "Add a Comment:"
+       const formInput = document.createElement('input')
+       formInput.type = "text"
+       commentForm.append(formLabel, formInput)
+       
+      //Add Content
        memeHouse.className = "card"
        memeName.textContent = meme.name 
        image.src = meme.image
@@ -28,11 +39,12 @@ const main = document.getElementById('main')
        upvoteNum.textContent = meme.upVote
        downvoteBtn.textContent = "Downvote"
        downvoteNum.textContent = meme.downVote
+       
 
        //Append to Dom
        upvoteNum.append(upvoteBtn)
        downvoteNum.append(downvoteBtn)
-       memeHouse.append(memeName, image, upvoteNum, downvoteNum)
+       memeHouse.append(memeName, image, upvoteNum, downvoteNum, commentList, commentForm)
        main.append(memeHouse) 
     })
  }
