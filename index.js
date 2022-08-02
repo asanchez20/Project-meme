@@ -47,13 +47,13 @@ const main = document.getElementById('main')
        downvoteNum.textContent = meme.downVote
 
        //Button Event Listeners
-      upvoteBtn.addEventListener('click', () =>{
-         upvoteNum.textContent = parseInt(upvoteNum.textContent) + 1
-      })
+
        
 
        //Append to Dom
-       memeHouse.append(memeName, image, upvoteNum, upvoteBtn, downvoteNum, downvoteBtn, commentList, commentForm)
+       upvoteNum.append(upvoteBtn)
+       downvoteNum.append(downvoteBtn)
+       memeHouse.append(memeName, image, upvoteNum, downvoteNum, commentList, commentForm)
        main.append(memeHouse) 
     })
  }
