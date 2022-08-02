@@ -67,9 +67,9 @@ function addComment(e){
    e.target.reset()
 }
 
-      // Add meme submit button
-      {
+   
 
-      }
+
+
 
 })
