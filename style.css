@@ -35,8 +35,8 @@ form{
 
       div.card{
             background-color: white;
-            float:left;
             animation: myAnim 2s ease 0s 1 normal forwards;
+
             
             }
       
@@ -68,5 +68,12 @@ form{
                 100% {
                     transform: scale3d(1, 1, 1);
                 }
+            }
+
+            div#main{
+                display: inline-grid;
+                position: relative;
+                left: 600px;
+                top: 2px;
             }
     
