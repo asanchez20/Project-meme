@@ -50,7 +50,10 @@ const main = document.getElementById('main')
       upvoteBtn.addEventListener('click', () =>{
          upvoteNum.textContent = parseInt(upvoteNum.textContent) + 1
       })
-       
+      
+      downvoteBtn.addEventListener('click', () =>{
+         downvoteNum.textContent = parseInt(downvoteNum.textContent) + 1
+      })
 
        //Append to Dom
        memeHouse.append(memeName, image, upvoteNum, upvoteBtn, downvoteNum, downvoteBtn, commentList, commentForm)
