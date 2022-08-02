@@ -75,4 +75,24 @@ function addComment(e){
 
 
 
+
+// add meme form
+const mainForm = document.getElementById("main-form")
+mainForm.addEventListener("submit", (e) =>{
+   e.preventDefault()
+   const memeName = e.target["new-name"].value
+   const newImage = e.target["new-image"].value
+   const newMeme = {
+      "name": memeName,
+      "image": newImage,
+      "upVote": 0,
+      "downVote": 0
+   }
+   const newMemeArray = [newMeme]
+   renderMeme(newMemeArray)
+})
+
+
+
+
 })
