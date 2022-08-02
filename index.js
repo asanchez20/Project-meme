@@ -21,6 +21,7 @@ const main = document.getElementById('main')
        const downvoteBtn = document.createElement('button')
        const downvoteNum = document.createElement("p")
        const commentList = document.createElement('ul')
+      
 
        //Comment Form
        const commentForm = document.createElement("form")
@@ -29,9 +30,11 @@ const main = document.getElementById('main')
        formLabel.textContent = "Add a Comment:"
        const formInput = document.createElement('input')
        formInput.type = "text"
+       formInput.name ="comment"
        const submitBtn = document.createElement('button')
        submitBtn.label = "submit"
        submitBtn.textContent = "Submit"
+       commentForm.addEventListener('submit', e => addComment(e))
        commentForm.append(formLabel, formInput, submitBtn)
        
       //Add Content
@@ -54,4 +57,15 @@ const main = document.getElementById('main')
        main.append(memeHouse) 
     })
  }
+
+function addComment(e){
+   e.preventDefault()
+   const newCommentItem = document.createElement('li')
+   newCommentItem.textContent = e.target.comment.value
+   let commentList = e.target.comment.parentNode.previousSibling
+   commentList.appendChild(newCommentItem)
+   e.target.reset()
+}
+
+
 })
