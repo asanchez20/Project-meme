@@ -104,6 +104,7 @@ mainForm.addEventListener("submit", (e) =>{
    }
    const newMemeArray = [newMeme]
    renderMeme(newMemeArray)
+   mainForm.reset()
 })
 
 
