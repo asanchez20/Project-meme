@@ -20,9 +20,17 @@ label{
         vertical-align: top;
     }
 
+#main {
+    justify-content: center;
+
+}
+
  div.card{
-        background-color: white;
-        display: inline-block;
+        background-color: rgb(72, 107, 132, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* position: relative; */
         /* text-align: center; */
         border: grey solid 1px;
         padding: 1rem;
