@@ -41,10 +41,10 @@ const main = document.getElementById('main')
        memeHouse.className = "card"
        memeName.textContent = meme.name 
        image.src = meme.image
-       upvoteBtn.textContent = "Upvote"
        upvoteNum.textContent = meme.upVote
-       downvoteBtn.textContent = "Downvote"
        downvoteNum.textContent = meme.downVote
+       upvoteBtn.id = "upbtn"
+       downvoteBtn.id = "downbtn"
       
        // Event Listeners
        image.addEventListener("mouseover", () =>{
