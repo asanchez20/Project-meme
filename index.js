@@ -71,11 +71,17 @@ const main = document.getElementById('main')
 
 function addComment(e){
    e.preventDefault()
+   const deleteBtn = document.createElement("button")
+   deleteBtn.textContent= "x"
    const newCommentItem = document.createElement('li')
    newCommentItem.textContent = e.target.comment.value
    let commentList = e.target.comment.parentNode.previousSibling
+   newCommentItem.append(deleteBtn)
    commentList.appendChild(newCommentItem)
    e.target.reset()
+   deleteBtn.addEventListener("click", () => {
+      newCommentItem.remove()
+   })
 }
 
    
