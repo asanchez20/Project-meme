@@ -1,5 +1,8 @@
 body{
-    background-color:  cyan;
+    background-image:  url(https://shotfotos.com/wp-content/uploads/2020/03/Laughing_tears_emojis400.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #main img{
@@ -7,8 +10,18 @@ body{
     width: 270px;
 }
 
-form{
+#main-form h1{
+    color: #FFFFFF;
+
+text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
+}
+form#main-form{
     text-align: center;
+    /* background-image:  url(https://wallpaperaccess.com/full/339108.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+
 }
 
 label{
@@ -26,18 +39,15 @@ label{
 }
 
  div.card{
-        background-color: rgb(72, 107, 132, 0.4);
+        background-color: rgba(167, 192, 210, 0.4);
         display: flex;
         justify-content: center;
         align-items: center;
-        /* position: relative; */
-        /* text-align: center; */
+        text-align: center;
         border: grey solid 1px;
         padding: 1rem;
-         /* width: 15rem;
-        height: 25rem;  */
         margin: 1rem 2rem;
-        box-shadow: 3px 4px #4bcce0;
+        box-shadow: 3px 4px #101111;
         animation: myAnim 2s ease 0s 1 normal forwards;
   }
       
