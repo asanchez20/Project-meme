@@ -48,8 +48,63 @@ label{
 
 #main {
     justify-content: center;
-
 }
+
+#upbtn{
+   background-image : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAAC9vb3z8/MvLy/AwMCnp6ednZ3CwsJGRkasrKz4+PipqakGBgbt7e3q6upAQEC3t7eioqLNzc1lZWXf39/l5eVOTk5ISEg5OTmPj4+FhYUfHx8XFxd9fX1qamoPDw90dHRZWVnV1dU0NDQkJCQYhmjlAAAFbElEQVR4nO2da3uiMBBGcakVi/VSL2hrr3b//1/c0ko1ySSQQMiEfc9Hm0dzOjPM4AWSBAAAAAAAADA00vVqtlqnobfhjcXTcVRyfFqE3oofVs+jiudV6M34YDa6ZhZ6O91zNxK5C72hrrkdydyG3lK3qIIDU5wRgoOqRbkGB1eLVIoOKlH1ggNR1KXoYBKVPsgM6HBjStFBJGpdBKOPIlGDk0HVIpGiWZINKFEJwfHXw+PBKBIpmn3/gYhilIlKHGTG5z8RUYzwcKOm6H32+8fsPv5E1dRgRfy1qK3BithrkajBTFpCKEZUi0QNjpVF44hrsUEES+KNIlGDagRLiMNNFLVIjmo0cQ5wNW1CJMamUdsmROJrGoZRjSa2Ac44qtHENcBZR7Akpig2bhMi8TSNho1eJZbW32hUo4ljgHOOYEkMUXSswQr+tejQJkS4Nw2rUY2G9wBnOarRcB7gnBq9Ct/W36JNiBBNg4ViRxEs4RnFlm1ChGPTsDijbwK/s/4O2oQIt6bRSZsQ4dU0Oq3BCk612HpUo+EzwHVegxVcatFDDVbwqMUOG70Kh9bf2ahGE36Aa3VG34TQZ/1e2oRI2KbR8ahGE3KA89YmRMI1DY9tQiRU0/DaJkTCNA1PoxpNiAGuxwiW9B/FHtqESN9Nw7bR5+ss2xmfcZdl69y0oN/WrwoaR7V8clOu2Wy1K7abcsHNxOTY5wBHZIwpgovivOi41qxYH88rCtMPEokoeqqM3ZvVK82Xl0jTUdxeorOcG55J/c++mVPflRerCO6WVwtfySWvVyuWpj2rUXxpZaJhcZRfxhTBxVT4n1Mhmgs5MTUlqhLFo4/f2a5sIjhfimtPxJqTuMSYqEoUffzM9kF8iTdjBCVBMtxyYJbGKEoHgYeWNhTSDyWeDEt3suDoD7Hqj7zIWItP4tpJSxsKKYaG0UKJYENDUxTlYcpHDJU61JWCXIPNDfW12PjF2zBXjqX0qxARbGyoi6IieDQdlpxR+yGluJsqyywMR1OqFhVBP/2QmmlURSpFbQypRFUFPc001JbknZMpamWoJmqDl+0M4pd1YhTVNmFvKDcNNYJeWoVe8XrvC7IGbQ3FAY5Y5VGQVLyMK5oatDa8rkXijM2roFFRV4P2hpda7F/QkKh0m3AzrJpG3ymqU/wewk0RtDf8iaI8bvcjSEZxbapBJ8OyFtfqo70IUor3d2qKCm8g1RqqbzdN79THehIko6iwv7EyvNk3eM7eBJsoFttPK8PPbTGqo0fBesVlmlvGME/NldyzYJ1iMU9SS8M0mZuj2LOgWbF8g9fe8PIWMgtBk+K0HLocDJO5fmgIIKhX3H9fF9HFMEl1R9QggjrF4ufCj06GSUonaiBBWrE4nxe4GdKHm2CClOKyunSno2FCNI2Agqpi8ftJoKthkstRDCooKxaXi686G8q1GFhQfDP69eqzXHfDJL/+2C34d/WT5LQ57+UgfBGkheFXZvw9P/xBfWjVP7vZy+b9UfrCQSvDJM0e3zcvDzz8NLQzjAEYwpA/MIQhf2AIQ/7AEIb8gSEM+QNDGPIHhjDkDwxhyB8YwpA/MIQhf2AIQ/7AEIb8gSEM+QNDGPIHhjDkDwxhyB8YwpA/MIQhf2AIQ/7AEIb8gSEM+QNDGPIHhjDkDwxhyB8YwpA/MIQhf2AIQ/78b4arJJcRL7YeveFhP5XZHwZlWAsMGTJ8w/xQr3XFwXgDPZ58WBl+hN6uA49Who+ht+sAcVV8A7obCLJmU+/1yyb0Zp0g7i2kw9e9f3xD3GBEg9+7tXrk1KxjHFhfptRMPvms9fs03meVP/k2m93qmWXbuP0AAAAAAAAAP/wDi1tE64Pe6JYAAAAASUVORK5CYII=);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+#downbtn{
+    background-image : url(https://www.iconpacks.net/icons/2/free-icon-arrow-down-2824.png);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+/* #main button{
+    width: 0;
+	height: 0;
+	border-width: 0 100px 100px 100px;
+	border-color: transparent transparent #FF0000 transparent;
+	border-style: solid;
+} */
+
+form button{
+        background: #3498db;
+        background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+        background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+        background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+        background-image: -o-linear-gradient(top, #3498db, #2980b9);
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 13px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+      }
+      
+form button:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #d9d334);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #d9d334);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #d9d334);
+        background-image: -o-linear-gradient(top, #3cb0fd, #d9d334);
+        background-image: linear-gradient(to bottom, #3cb0fd, #d9d334);
+        text-decoration: none;
+      }
+
 
 h2{
     color: transparent;
@@ -58,12 +113,14 @@ background: #000000;
 -moz-background-clip: text;
 background-clip: text;
 text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+margin-right: 100px;
 }
+
 
  div.card{
         background-color: rgba(167, 192, 210, 0.4);
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
         border: grey solid 1px;
@@ -104,4 +161,29 @@ text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
             }
 
           
-    
+            #new-meme {
+                background: #3498db;
+                background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+                background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+                background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+                background-image: -o-linear-gradient(top, #3498db, #2980b9);
+                background-image: linear-gradient(to bottom, #3498db, #2980b9);
+                -webkit-border-radius: 28;
+                -moz-border-radius: 28;
+                border-radius: 28px;
+                font-family: Arial;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;
+              }
+              
+              #new-meme:hover {
+                background: #3cb0fd;
+                background-image: -webkit-linear-gradient(top, #3cb0fd, #d9d334);
+                background-image: -moz-linear-gradient(top, #3cb0fd, #d9d334);
+                background-image: -ms-linear-gradient(top, #3cb0fd, #d9d334);
+                background-image: -o-linear-gradient(top, #3cb0fd, #d9d334);
+                background-image: linear-gradient(to bottom, #3cb0fd, #d9d334);
+                text-decoration: none;
+              }
