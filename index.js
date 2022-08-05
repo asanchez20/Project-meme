@@ -1,41 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
 const url = "http://localhost:3000/memes"
 
+//Fetch Meme Data
 fetch(url)
 .then(resp => resp.json())
 .then(memes => renderMeme(memes))
 
 const main = document.getElementById('main')
 
- // render function
+ //Render Function
  function renderMeme(memeArray){
     memeArray.forEach(meme => {
       //Create Meme Parts
       const memeHouse = document.createElement('div')
       const memeName = document.createElement('h2')
-       const image = document.createElement("img")
-       const upvoteBtn = document.createElement('button')
-       const upvoteNum = document.createElement("p")
-       const downvoteBtn = document.createElement('button')
-       const downvoteNum = document.createElement("p")
-       const commentList = document.createElement('ul')
+      const image = document.createElement("img")
+      const upvoteBtn = document.createElement('button')
+      const upvoteNum = document.createElement("p")
+      const downvoteBtn = document.createElement('button')
+      const downvoteNum = document.createElement("p")
+      const commentList = document.createElement('ul')
       
 
-       //Comment Form
-       const commentForm = document.createElement("form")
-       const formLabel = document.createElement('label')
-       formLabel.for = "comment"
-       const formInput = document.createElement('input')
-       formInput.type = "text"
-       formInput.name ="comment"
-       formInput.placeholder = 'Add a Comment'
-       const submitBtn = document.createElement('button')
-       submitBtn.label = "submit"
-       submitBtn.textContent = "Submit"
-       commentForm.addEventListener('submit', e => addComment(e))
-       commentForm.append(formLabel, formInput, submitBtn)
+      //Comment Form
+      const commentForm = document.createElement("form")
+      const formLabel = document.createElement('label')
+      formLabel.for = "comment"
+      const formInput = document.createElement('input')
+      formInput.type = "text"
+      formInput.name ="comment"
+      formInput.placeholder = 'Add a Comment'
+      const submitBtn = document.createElement('button')
+      submitBtn.label = "submit"
+      submitBtn.textContent = "Submit"
+      commentForm.addEventListener('submit', e => addComment(e))
+      commentForm.append(formLabel, formInput, submitBtn)
        
       //Add Content
        memeHouse.className = "card"
@@ -51,10 +51,12 @@ const main = document.getElementById('main')
         image.style.height = '340px'
         image.style.width = 'auto'
        })
+
        image.addEventListener('mouseout',() =>{
          image.style.height = '170px'
          image.style.width = 'auto'
        })
+
       upvoteBtn.addEventListener('click', () =>{
          upvoteNum.textContent = parseInt(upvoteNum.textContent) + 1
       })
@@ -69,28 +71,26 @@ const main = document.getElementById('main')
     })
  }
 
+ 
+//Add Comment Callback Function
 function addComment(e){
    e.preventDefault()
-   const deleteBtn = document.createElement("button")
-   deleteBtn.textContent= "x"
    const newCommentItem = document.createElement('li')
    newCommentItem.textContent = e.target.comment.value
    let commentList = e.target.comment.parentNode.previousSibling
+   const deleteBtn = document.createElement("button")
+   deleteBtn.textContent= "x"
    newCommentItem.append(deleteBtn)
    commentList.appendChild(newCommentItem)
    e.target.reset()
+
    deleteBtn.addEventListener("click", () => {
-      newCommentItem.remove()
+   newCommentItem.remove()
    })
 }
 
-   
 
-
-
-
-
-// add meme form
+//Add New Meme Form
 const mainForm = document.getElementById("main-form")
 mainForm.addEventListener("submit", (e) =>{
    e.preventDefault()
@@ -105,9 +105,6 @@ mainForm.addEventListener("submit", (e) =>{
    const newMemeArray = [newMeme]
    renderMeme(newMemeArray)
    mainForm.reset()
-})
-
-
-
+   })
 
 })
